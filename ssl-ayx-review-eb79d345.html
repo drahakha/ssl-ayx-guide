@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 叙</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.7;
+            background-color: #f7f5f2;
+            color: #2d2a26;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        /* 深色头图区 — 故事开场 */
+        .hero {
+            background: #18222c;
+            background-image: radial-gradient(circle at 20% 30%, #2a3a48 0%, #0f171e 100%);
+            color: #e5dfd8;
+            padding: 80px 20px 70px;
+            text-align: center;
+            border-radius: 0 0 36px 36px;
+            margin: 0 -20px 48px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .hero__small {
+            font-size: 0.9rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #a0b6c7;
+            margin-bottom: 18px;
+            font-weight: 400;
+        }
+
+        .hero__title {
+            font-size: 2.8rem;
+            font-weight: 300;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            color: #f3ede7;
+        }
+
+        .hero__sub {
+            font-size: 1.1rem;
+            max-width: 560px;
+            margin: 0 auto;
+            color: #cbd7e3;
+            font-weight: 300;
+        }
+
+        /* 正文区 — 浅色底 */
+        .content-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 40px 36px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.03);
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 500px) {
+            .hero__title {
+                font-size: 2rem;
+            }
+            .content-card {
+                padding: 28px 20px;
+            }
+        }
+
+        .content-card p {
+            margin-bottom: 1.4em;
+            font-size: 1.05rem;
+        }
+
+        .content-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .accent-link {
+            color: #b5653e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .accent-link:hover {
+            border-bottom-color: #b5653e;
+            color: #8f4f30;
+        }
+
+        /* 特点列表 — 温和叙事风格 */
+        .feature-list {
+            list-style: none;
+            margin: 24px 0 18px;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 12px 0 12px 32px;
+            position: relative;
+            border-bottom: 1px solid #edeae5;
+            font-size: 1rem;
+            color: #3b3631;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li::before {
+            content: "·";
+            position: absolute;
+            left: 8px;
+            color: #b5653e;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+
+        .feature-list strong {
+            font-weight: 600;
+            color: #2d2a26;
+        }
+
+        /* 温和结尾区 */
+        .closing {
+            text-align: center;
+            padding: 24px 0 8px;
+            font-size: 0.95rem;
+            color: #6b6259;
+            border-top: 1px solid #e2dbd2;
+            margin-top: 30px;
+            letter-spacing: 0.3px;
+        }
+
+        .closing .accent-link {
+            font-weight: 400;
+        }
+
+        /* 说明小字 — 自然点缀 */
+        .note {
+            font-size: 0.9rem;
+            color: #7e756b;
+            background: #f3f0eb;
+            border-radius: 40px;
+            padding: 12px 24px;
+            text-align: center;
+            max-width: 600px;
+            margin: 36px auto 0;
+        }
+
+        /* 响应式保留细节 */
+        @media (max-width: 480px) {
+            .hero {
+                padding: 56px 16px 50px;
+            }
+            .hero__title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- 深色头图 · 故事开场 -->
+        <header class="hero">
+            <div class="hero__small">一段关于陪伴的叙事</div>
+            <h1 class="hero__title">有些乐趣<br>从不在意时间</h1>
+            <p class="hero__sub">偶尔停下来，就只是单纯地，<br>与自己所选的世界待一会儿。</p>
+        </header>
+
+        <!-- 承接段落 + 自然嵌入链接 -->
+        <div class="content-card">
+            <p>
+                多年以后，或许你还会想起某个傍晚——屏幕的光映在脸上，耳机里一段熟悉的旋律响起，手指自然地按下某个键。那不是什么了不起的时刻，却莫名地安心。那是一种不必解释的沉浸，就像有人轻声问“要不要再玩一局”，而你笑着点头。
+            </p>
+            <p>
+                这种沉浸的载体有很多名字。有人叫它“第九艺术”，有人叫它“数字游乐场”。而在中文的语境里，一个简单而直接的名字被许多人所熟悉——那就是<a href="https://ssl-ayx.com.cn" class="accent-link">爱游戏</a>。它不厚重，不张扬，就像一个老朋友的口头禅，轻巧地概括了太多相似的傍晚。
+            </p>
+        </div>
+
+        <!-- 特点列表 — 克制叙述 -->
+        <div class="content-card">
+            <h2 style="font-weight: 400; font-size: 1.3rem; margin-bottom: 6px; color: #2d2a26;">一些它带来的痕迹</h2>
+            <ul class="feature-list">
+                <li><strong>慢节奏的陪伴</strong> —— 不需要追赶进度，也无需排名压力。打开一个熟悉的游戏，就像翻开一本旧书，随时可以停在某一页。</li>
+                <li><strong>审美的日常</strong> —— 从像素风格到细腻插画，从场景原画到角色设计，视觉的愉悦藏在每一次加载画面里。</li>
+                <li><strong>克制的连接</strong> —— 有时是单人世界，有时与远方的朋友合作一局，不多不少，刚好够让沉默变得自然。</li>
+                <li><strong>记忆的坐标</strong> —— 某个关卡的音乐、某个角色的台词、某次意外的成就，它们悄悄标记着生活的某个阶段。</li>
+            </ul>
+            <p style="font-size: 0.95rem; color: #5f554b; margin-top: 16px;">
+                这些细节并不宏大，但足够真实。就像一张旧地图，不需要指向宝藏，本身就已经是故事。
+            </p>
+        </div>
+
+        <!-- 温和的 FAQ 摘要 / 场景点缀 -->
+        <div class="content-card" style="background: #faf8f5;">
+            <p style="font-style: italic; color: #4f463e; font-size: 0.98rem;">
+                “偶尔有人问，为什么过了这么久还在玩同一个游戏？<br>
+                其实答案可能很简单——不是因为游戏变了，而是因为自己还在那个故事里，舍不得走出来。”
+            </p>
+            <div class="note">
+                ⚬ 不必成为高手，也不必打通所有关卡。<br>
+                ・有时候，只是想在另一个世界里安静地走一走。
+            </div>
+        </div>
+
+        <!-- 温和结尾，再次自然嵌入链接 -->
+        <div class="closing">
+            <p>
+                如果你也曾在某个夜晚，为一段剧情动容，或为一场胜利轻轻握拳——<br>
+                那么你大概已经明白，为什么我们依然愿意称它为<a href="https://ssl-ayx.com.cn" class="accent-link">爱游戏</a>。
+            </p>
+            <p style="margin-top: 12px; font-size: 0.85rem; color: #8c8278;">
+                不为了结果，只为了那个过程本身。
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
